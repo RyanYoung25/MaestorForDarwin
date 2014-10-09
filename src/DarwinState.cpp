@@ -92,7 +92,7 @@ void DarwinState::updateRobot()
 
 }
 
-void DarwinState::setProperty(std::string Joint, std::string Property, double value)
+void DarwinState::setProperty(char* Joint, std::string Property, double value)
 {   
     motor* joint;
     try
@@ -140,7 +140,7 @@ double DarwinState::getProperty(std::string Joint, std::string Property)
     }
 }
 
-void DarwinState::command(std::string Command, std::string Joint)
+void DarwinState::command(std::string Command, char* Joint)
 {
     motor* joint;
     try

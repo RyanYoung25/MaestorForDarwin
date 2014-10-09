@@ -27,9 +27,9 @@ class DarwinState
         DarwinState(Robot::CM730* _cm730);
         ~DarwinState();
         void updateRobot();
-        void setProperty(std::string Joint, std::string Property, double value);
+        void setProperty(char* Joint, std::string Property, double value);
         double getProperty(std::string Joint, std::string Property);
-        void command(std::string Command, std::string Joint);
+        void command(std::string Command, char* Joint);
 
     private:
         //
